@@ -1,0 +1,172 @@
+:root {
+    /* Primary Colors */
+    --Cyan: hsl(179, 62%, 43%);
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    /* Neutral */
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    /* Font Family */
+    --Karla: 'Karla', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--Light-Gray);
+    font-family: var(--Karla);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 5em 1.5em;
+}
+
+.container {
+    width: min(100%, 38.438rem);
+    margin: 0 auto;
+}
+
+section {
+    padding: 1.5rem;
+}
+
+.hero {
+    background-color: #fff;
+    border-radius: .50rem .50rem 0 0;
+}
+
+.hero h1,
+.hero h2 {
+    padding-bottom: 1em;
+}
+
+.hero h1 {
+    color: var(--Cyan);
+}
+
+.hero h2 {
+    color: var(--Bright-Yellow);
+    font-size: medium;
+}
+
+.hero p {
+    color: var(--Grayish-Blue);
+}
+
+.subscription {
+    background-color: var(--Dark-cyan);
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.subscription h2 {
+    padding-bottom: 1em;
+    font-size: large;
+}
+
+.subscription p {
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-right: .25em;
+}
+
+.per {
+    opacity: 0.5;
+}
+
+.access {
+    margin-bottom: 1.5rem;
+}
+
+
+.subscription a {
+    background-color: var(--Bright-Yellow);
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    border-radius: 0.5rem;
+    font-weight: 700;
+}
+
+.about {
+    background-color: var(--Cyan);
+    border-radius: 0 0 .50rem .50rem;
+}
+
+.about h2 {
+    color: #fff;
+    padding-bottom: 1em;
+    font-size: large;
+}
+
+.about ul {
+    color: var(--Light-Gray);
+    list-style: none;
+}
+
+.attribution {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Cyan);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--Bright-Yellow);
+}
+
+.attribution a:hover {
+    color: var(--Grayish-Blue);
+}
+
+.attribution a:visited {
+    color: var(--Bright-Yellow);
+}
+
+@media (min-width: 470px) {
+
+    .row {
+        display: flex;
+    }
+
+    .subscription {
+        border-radius: 0 0 0 0.5rem;
+        width: 100%;
+    }
+
+    .subscription a {
+        width: 100%;
+    }
+
+    .about {
+        border-radius: 0 0 0.5rem 0;
+        width: 100%;
+    }
+    
+
+}
